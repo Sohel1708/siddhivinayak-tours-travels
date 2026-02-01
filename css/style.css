@@ -245,3 +245,21 @@ footer p {
   margin-top: 20px;
 }
 
+/* VEHICLE IMAGE */
+.vehicle-img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-wrapper {
+    flex-direction: column;
+  }
+}
