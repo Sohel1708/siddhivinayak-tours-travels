@@ -221,3 +221,30 @@ footer {
 footer p {
   margin: 5px 0;
 }
+
+/* SERVICE COLORS */
+.service-1 { border-top: 4px solid #0b5ed7; }
+.service-2 { border-top: 4px solid #198754; }
+.service-3 { border-top: 4px solid #fd7e14; }
+.service-4 { border-top: 4px solid #6610f2; }
+.service-5 { border-top: 4px solid #d63384; }
+.service-6 { border-top: 4px solid #20c997; }
+
+/* TOUR COLORS */
+.tour-1 { border-top: 4px solid #0b5ed7; }
+.tour-2 { border-top: 4px solid #198754; }
+.tour-3 { border-top: 4px solid #fd7e14; }
+.tour-4 { border-top: 4px solid #6610f2; }
+.tour-5 { border-top: 4px solid #d63384; }
+.tour-6 { border-top: 4px solid #20c997; }
+
+/* TESTIMONIAL BOX */
+.testimonial-wrapper {
+  background: #f0f6ff;
+}
+
+/* CONTACT SPACING */
+.contact-info {
+  margin-top: 20px;
+}
+

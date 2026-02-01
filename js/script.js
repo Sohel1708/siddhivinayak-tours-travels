@@ -1,4 +1,3 @@
-/* ========== TESTIMONIAL SLIDER ========== */
 let testimonials = document.querySelectorAll(".testimonial");
 let index = 0;
 
@@ -19,11 +18,11 @@ function prevTestimonial() {
 
 setInterval(nextTestimonial, 5000);
 
-/* ========== FORM EMAIL SUBMISSION ========== */
-document.getElementById("bookingForm")?.addEventListener("submit", function (e) {
+/* FORM EMAIL */
+document.getElementById("bookingForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  let name = document.getElementById("name").value;
+  let name = nameInput = document.getElementById("name").value;
   let phone = document.getElementById("phone").value;
   let details = document.getElementById("details").value;
 
