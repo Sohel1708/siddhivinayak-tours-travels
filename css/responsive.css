@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+}
