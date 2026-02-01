@@ -1,4 +1,4 @@
-/* RESET */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 header {
   position: sticky;
   top: 0;
@@ -58,21 +58,27 @@ nav a:hover {
   font-size: 14px;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
-  background: #f2f6fa;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("../images/hero-bg.jpg") center/cover no-repeat;
+
   text-align: center;
   padding: 100px 20px 60px;
-  min-height: auto;
+  color: #ffffff;
 }
 
 .hero h2 {
-  font-size: 32px;
+  font-size: 34px;
   margin-bottom: 15px;
 }
 
 .hero p {
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .btn {
@@ -85,7 +91,7 @@ nav a:hover {
   text-decoration: none;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 section {
   padding: 80px 20px;
   scroll-margin-top: 90px;
@@ -97,26 +103,30 @@ h2 {
   font-size: 28px;
 }
 
-/* GRID */
+/* ================= GRID ================= */
 .grid {
   max-width: 1100px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 25px;
 }
 
-/* CARD */
+/* ================= CARD ================= */
 .card {
   background: #ffffff;
   padding: 25px;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-  font-weight: 500;
 }
 
-/* CENTER TEXT */
+.card h3 {
+  margin-bottom: 10px;
+  color: #0b5ed7;
+}
+
+/* ================= CENTER TEXT ================= */
 .center-text {
   max-width: 900px;
   margin: auto;
@@ -124,10 +134,20 @@ h2 {
   font-size: 16px;
 }
 
-/* TESTIMONIALS */
-.testimonial-slider {
-  max-width: 700px;
+/* ================= TESTIMONIALS ================= */
+.testimonial-wrapper {
+  max-width: 900px;
   margin: auto;
+  background: #e9f1ff;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial-slider {
+  flex: 1;
   text-align: center;
 }
 
@@ -137,11 +157,30 @@ h2 {
   font-size: 16px;
 }
 
+.testimonial strong {
+  display: block;
+  margin-top: 10px;
+}
+
 .testimonial.active {
   display: block;
 }
 
-/* FORM */
+.arrow {
+  background: #0b5ed7;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background: #094db1;
+}
+
+/* ================= FORM ================= */
 form {
   max-width: 500px;
   margin: auto;
@@ -166,14 +205,13 @@ form button {
   cursor: pointer;
 }
 
-#bookingForm {
-  margin-bottom: 30px; /* space below Send Enquiry */
+.contact-info {
+  margin-top: 20px;
 }
 
-
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer {
-  background: #0b5ed7;   /* same blue as header brand */
+  background: #0b5ed7;
   color: #ffffff;
   text-align: center;
   padding: 25px 15px;

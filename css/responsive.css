@@ -2,14 +2,18 @@
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-@media (max-width: 768px) {
-
-  nav {
-    display: none;
+  .header-flex {
+    flex-direction: column;
+    gap: 10px;
   }
 
+  nav {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
   }
@@ -18,16 +22,20 @@
     font-size: 26px;
   }
 
-  .hero {
-    padding: 90px 15px 50px;
+  .hero p {
+    font-size: 14px;
   }
 
-  section {
-    padding: 60px 15px;
+  .testimonial-wrapper {
+    flex-direction: column;
   }
 
-  .call-btn {
-    font-size: 13px;
-    padding: 6px 10px;
+  .arrow {
+    margin: 10px 0;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
   }
 }
