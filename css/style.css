@@ -60,14 +60,11 @@ nav a:hover {
 
 /* ================= HERO ================= */
 .hero {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
-    ),
-    url("../images/hero-bg.jpg") center/cover no-repeat;
-
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/hero/hero-bg.jpg") center/cover no-repeat;
   text-align: center;
-  padding: 100px 20px 60px;
+  padding: 120px 20px 80px;
   color: #ffffff;
 }
 
