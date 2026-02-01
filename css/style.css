@@ -1,141 +1,175 @@
-* { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
-body { color:#333; line-height:1.6; }
-
-.container { width:90%; max-width:1200px; margin:auto; }
-section { padding:60px 20px; }
-
-header {
-  background:#003366;
-  color:#fff;
-  padding:15px 0;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+}
 
 .header-flex {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0b5ed7;
 }
 
 nav a {
-  color:#fff;
-  margin:0 10px;
-  text-decoration:none;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0b5ed7;
 }
 
 .call-btn {
-  background:#ff9800;
-  padding:8px 14px;
-  color:#fff;
-  border-radius:4px;
+  background: #0b5ed7;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
+/* HERO */
 .hero {
-  background:#f2f6fa;
-  text-align:center;
-
-  padding-top: 140px;   /* pushes content below fixed header */
-  padding-bottom: 80px;
+  background: #f2f6fa;
+  text-align: center;
+  padding: 100px 20px 60px;
+  min-height: auto;
 }
 
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
 
+.hero p {
+  margin-bottom: 10px;
+}
 
 .btn {
-  background:#ff9800;
-  color:#fff;
-  padding:12px 25px;
-  text-decoration:none;
-  display:inline-block;
-  margin-top:15px;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 26px;
+  background: #0b5ed7;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  scroll-margin-top: 90px;
 }
 
 h2 {
-  text-align:center;
-  margin-bottom:30px;
-  color:#003366;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
 }
 
+/* GRID */
 .grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:20px;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.routes-grid {
-  max-width:1000px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
+/* CARD */
 .card {
-  background:#fff;
-  padding:25px;
-  text-align:center;
-  border-radius:6px;
-  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  background: #ffffff;
+  padding: 25px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
 }
 
-#testimonials { background:#f9f9f9; }
+/* CENTER TEXT */
+.center-text {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+}
 
+/* TESTIMONIALS */
 .testimonial-slider {
-  max-width:700px;
-  margin:auto;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
 }
 
 .testimonial {
-  display:none;
-  text-align:center;
-  animation:fade 1s;
+  display: none;
+  font-style: italic;
+  font-size: 16px;
 }
 
-.testimonial.active { display:block; }
-
-@keyframes fade {
-  from { opacity:0; }
-  to { opacity:1; }
+.testimonial.active {
+  display: block;
 }
 
+/* FORM */
 form {
-  max-width:500px;
-  margin:30px auto;
-  display:flex;
-  flex-direction:column;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-form input, form textarea {
-  padding:12px;
-  margin-bottom:15px;
+form input,
+form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 form button {
-  background:#003366;
-  color:#fff;
-  padding:12px;
-  border:none;
-  cursor:pointer;
+  padding: 12px;
+  background: #0b5ed7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.center-text {
-  text-align:center;
-  max-width:800px;
-  margin:20px auto;
-}
-
+/* FOOTER */
 footer {
-  background:#003366;
-  color:#fff;
-  text-align:center;
-  padding:20px;
-}
-
-section {
-  scroll-margin-top: 100px;
+  background: #f2f6fa;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }

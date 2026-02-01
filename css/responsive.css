@@ -1,13 +1,33 @@
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
-  header .container {
-    flex-direction: column;
+
+  nav {
+    display: none;
   }
 
-  header nav {
-    margin-top: 10px;
+  .grid {
+    grid-template-columns: 1fr;
   }
 
   .hero h2 {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .hero {
+    padding: 90px 15px 50px;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+
+  .call-btn {
+    font-size: 13px;
+    padding: 6px 10px;
   }
 }
