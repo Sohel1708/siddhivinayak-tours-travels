@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Siddhivinayak Tours & Travels | Mumbai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Siddhivinayak Tours & Travels - Local Cabs, Airport Taxi, Outstation & Pilgrimage Tours from Mumbai. 15+ Years Experience.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -13,9 +15,9 @@
   <div class="container header-flex">
     <div class="logo">Siddhivinayak Tours & Travels</div>
     <nav>
+      <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#tours">Tours</a>
-      <a href="#testimonials">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
     <a href="tel:+919930986633" class="call-btn">Call Now</a>
@@ -30,75 +32,105 @@
   <a href="#contact" class="btn">Book Your Journey</a>
 </section>
 
+<!-- ================= OUR STORY ================= -->
+<section id="about">
+  <h2>Our Story</h2>
+  <p class="center-text">
+    Siddhivinayak Tours & Travels is a Mumbai-based travel company with
+    <strong>15+ years of experience</strong> in providing safe, reliable and
+    comfortable travel services.
+    <br><br>
+    From local cab services to large corporate travel and spiritual pilgrimage
+    journeys, we have proudly served thousands of happy customers.
+  </p>
+</section>
+
 <!-- ================= OUR SERVICES ================= -->
 <section id="services">
   <h2>Our Services</h2>
 
   <div class="grid">
-
     <div class="card service-1">
-      <img src="images/cabs/sedan.jpeg" alt="Sedan Cab Service in Mumbai" class="vehicle-img">
+      <img src="images/cabs/sedan.jpeg" alt="Sedan Cab" class="vehicle-img">
       <h3>Sedan Cabs</h3>
-      <p>Comfortable sedan taxis for local travel, airport taxi & outstation travel.</p>
+      <p>Comfortable sedan taxis for city, airport & outstation travel.</p>
     </div>
 
     <div class="card service-2">
-      <h3>Corporate Travel</h3>
-      <p>Professional and punctual corporate transport solutions for businesses.</p>
+      <h3>SUV & MUV</h3>
+      <p>Spacious SUVs for family, group and long-distance journeys.</p>
     </div>
 
     <div class="card service-3">
-      <h3>Event & Marriage Travel</h3>
-      <p>Well-managed transport services for weddings and special events.</p>
+      <h3>Airport Transfers</h3>
+      <p>On-time pickup & drop services for all Mumbai airports.</p>
     </div>
 
+    <div class="card service-4">
+      <h3>Corporate Travel</h3>
+      <p>Reliable transport solutions for business & office travel.</p>
+    </div>
+
+    <div class="card service-5">
+      <h3>Event / Marriage Travel</h3>
+      <p>Guest transportation for weddings and special events.</p>
+    </div>
+
+    <div class="card service-6">
+      <h3>Outstation Trips</h3>
+      <p>Comfortable long-distance travel across Maharashtra & India.</p>
+    </div>
   </div>
 </section>
 
-<!-- ================= TOUR PACKAGES ================= -->
+<!-- ================= TOURS ================= -->
 <section id="tours">
   <h2>Tour Packages & Pilgrimage Trips</h2>
 
   <div class="grid">
-
     <div class="card tour-1">
       <h3>Customized Tours</h3>
-      <p>Tailor-made tour packages designed as per your comfort and budget.</p>
+      <p>Personalized travel plans as per your needs.</p>
     </div>
 
     <div class="card tour-2">
-      <h3>Family & Group Tours</h3>
-      <p>Enjoy memorable family and group trips with complete travel support.</p>
+      <h3>Family Group Tours</h3>
+      <p>Comfortable & safe tours for families and groups.</p>
     </div>
 
     <div class="card tour-3">
-      <h3>Jyotirlinga & Ujjain Tours</h3>
-      <p>Spiritual pilgrimage tours including Jyotirlinga & Ujjain Darshan.</p>
+      <h3>Couple Tours</h3>
+      <p>Romantic getaways & honeymoon trips.</p>
     </div>
 
+    <div class="card tour-4">
+      <h3>Jyotirlinga Tours</h3>
+      <p>Well-planned spiritual journeys across India.</p>
+    </div>
+
+    <div class="card tour-5">
+      <h3>Ujjain & Mahakal</h3>
+      <p>Dedicated pilgrimage tours to Ujjain.</p>
+    </div>
+
+    <div class="card tour-6">
+      <h3>All India Pilgrimage</h3>
+      <p>Char Dham & other holy destinations.</p>
+    </div>
   </div>
 </section>
 
 <!-- ================= TESTIMONIALS ================= -->
-<section id="testimonials">
+<section>
   <h2>What Our Customers Say</h2>
 
   <div class="testimonial-wrapper">
     <button class="arrow" onclick="prevTestimonial()">&#10094;</button>
 
     <div class="testimonial-slider">
-      <div class="testimonial active">
-        “Very reliable service and polite drivers. Highly recommended!”
-        <strong>- Rahul M.</strong>
-      </div>
-      <div class="testimonial">
-        “Best travel experience for airport pickup. Always on time.”
-        <strong>- Neha S.</strong>
-      </div>
-      <div class="testimonial">
-        “Excellent service for our family tour. Comfortable journey.”
-        <strong>- Amit P.</strong>
-      </div>
+      <div class="testimonial active">"Excellent service and polite drivers."<strong>- Ramesh</strong></div>
+      <div class="testimonial">"Very reliable airport taxi service."<strong>- Priya</strong></div>
+      <div class="testimonial">"Best pilgrimage travel experience."<strong>- Anil</strong></div>
     </div>
 
     <button class="arrow" onclick="nextTestimonial()">&#10095;</button>
@@ -116,10 +148,11 @@
     <button type="submit">Send Enquiry</button>
   </form>
 
-  <p class="center-text contact-info">
+  <div class="contact-info center-text">
+    <br>
     📞 <a href="tel:+919930986633">+91 99309 86633</a><br>
     ✉️ siddhivinayaktoursandtravels@gmail.com
-  </p>
+  </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
@@ -128,28 +161,6 @@
   <p>Trusted • Safe • Reliable</p>
 </footer>
 
-<!-- ================= JS ================= -->
-<script>
-let current = 0;
-const testimonials = document.querySelectorAll(".testimonial");
-
-function showTestimonial(index) {
-  testimonials.forEach(t => t.classList.remove("active"));
-  testimonials[index].classList.add("active");
-}
-
-function nextTestimonial() {
-  current = (current + 1) % testimonials.length;
-  showTestimonial(current);
-}
-
-function prevTestimonial() {
-  current = (current - 1 + testimonials.length) % testimonials.length;
-  showTestimonial(current);
-}
-
-setInterval(nextTestimonial, 5000);
-</script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
