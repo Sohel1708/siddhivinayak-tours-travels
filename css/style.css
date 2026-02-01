@@ -168,8 +168,13 @@ form button {
 
 /* FOOTER */
 footer {
-  background: #f2f6fa;
+  background: #0b5ed7;   /* same blue as header brand */
+  color: #ffffff;
   text-align: center;
-  padding: 20px;
+  padding: 25px 15px;
   font-size: 14px;
+}
+
+footer p {
+  margin: 5px 0;
 }
