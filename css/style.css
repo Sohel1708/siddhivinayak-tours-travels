@@ -166,6 +166,11 @@ form button {
   cursor: pointer;
 }
 
+#bookingForm {
+  margin-bottom: 30px; /* space below Send Enquiry */
+}
+
+
 /* FOOTER */
 footer {
   background: #0b5ed7;   /* same blue as header brand */
